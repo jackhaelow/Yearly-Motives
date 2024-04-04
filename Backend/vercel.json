@@ -1,13 +1,6 @@
 {
-   
-    "builds":[
-        {"src": "*.ts",
-         "use":"@vercel/node"
-        }
-    ],
-    "routes":[
-        {
-            "src":"/(.*)"
-        }
-    ]
+  "rewrite":[
+    {"source": "/(.*)","destination":"/"}
+  ] 
+ 
 }
